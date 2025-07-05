@@ -1,0 +1,955 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D8BACBA258A7ED9008067A2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0D8BACB9258A7ED8008067A2 /* GoogleService-Info.plist */; };
+		2C2D36C64D110808FD7F9B13 /* Pods_iSalah.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5921D6AFED90FA3BAA61421C /* Pods_iSalah.framework */; };
+		AE6FA3F808D0446273BE64E6 /* Pods_iSalahWidgetExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EDDFAF6551C111C1191723C2 /* Pods_iSalahWidgetExtension.framework */; };
+		CD44507E2564987200C2D388 /* iSalahWidgetViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD44507D2564987200C2D388 /* iSalahWidgetViews.swift */; };
+		CD4A6F3A251DCF7600A2513A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4A6F39251DCF7600A2513A /* AppDelegate.swift */; };
+		CD4A6F3C251DCF7600A2513A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4A6F3B251DCF7600A2513A /* SceneDelegate.swift */; };
+		CD4A6F41251DCF7600A2513A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD4A6F3F251DCF7600A2513A /* Main.storyboard */; };
+		CD4A6F43251DCF7700A2513A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD4A6F42251DCF7700A2513A /* Assets.xcassets */; };
+		CD4A6F46251DCF7700A2513A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD4A6F44251DCF7700A2513A /* LaunchScreen.storyboard */; };
+		CD4A6F53251DD29300A2513A /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD4A6F52251DD29300A2513A /* Colors.xcassets */; };
+		CD4F76A42563EEAA003E4F7D /* AppUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4F76A32563EEAA003E4F7D /* AppUtils.swift */; };
+		CD4F76A52563EEAA003E4F7D /* AppUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD4F76A32563EEAA003E4F7D /* AppUtils.swift */; };
+		CD5899B32520427E00764AEA /* PrayerTimeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5899B22520427E00764AEA /* PrayerTimeViewModel.swift */; };
+		CD5899BB25204C1500764AEA /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5899BA25204C1500764AEA /* WidgetKit.framework */; };
+		CD5899BD25204C1500764AEA /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD5899BC25204C1500764AEA /* SwiftUI.framework */; };
+		CD5899C025204C1500764AEA /* iSalahWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD5899BF25204C1500764AEA /* iSalahWidget.swift */; };
+		CD5899C225204C1500764AEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD5899C125204C1500764AEA /* Assets.xcassets */; };
+		CD5899C725204C1500764AEA /* iSalahWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CD5899B925204C1500764AEA /* iSalahWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		CD59B90F251DE9A200879046 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD59B90E251DE9A200879046 /* HomeViewController.swift */; };
+		CD6984342520EA7C001BFAD8 /* PrayerTimeHorizontalRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6984332520EA7C001BFAD8 /* PrayerTimeHorizontalRow.swift */; };
+		CD6984372520EAC7001BFAD8 /* PrayerTimeHorizontalRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD6984332520EA7C001BFAD8 /* PrayerTimeHorizontalRow.swift */; };
+		CD6984482520F3F4001BFAD8 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD831FA2251F58B800BFEB39 /* UserData.swift */; };
+		CD69844B2520F40B001BFAD8 /* SchoolOfThought.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD831F2D251F4C7500BFEB39 /* SchoolOfThought.swift */; };
+		CD6984CD2521188F001BFAD8 /* AladhanService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD07400251F88DA00AF9BF8 /* AladhanService.swift */; };
+		CD7BC1912566024A00DBF97D /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD7BC1902566024A00DBF97D /* OpenSans-Semibold.ttf */; };
+		CD7BC1922566024A00DBF97D /* OpenSans-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD7BC1902566024A00DBF97D /* OpenSans-Semibold.ttf */; };
+		CD831ECA251EFD7900BFEB39 /* TrendexSSi-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD831EC9251EFD7900BFEB39 /* TrendexSSi-Regular.ttf */; };
+		CD831ED8251EFDE600BFEB39 /* TrendexSSi-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CD831ED7251EFDE600BFEB39 /* TrendexSSi-Bold.ttf */; };
+		CD831F07251F10F400BFEB39 /* Popup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD831F06251F10F400BFEB39 /* Popup.storyboard */; };
+		CD831F0C251F3A4800BFEB39 /* SchoolOfThoughtSelectPopupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD831F0B251F3A4800BFEB39 /* SchoolOfThoughtSelectPopupController.swift */; };
+		CD831F11251F3A6600BFEB39 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD831F10251F3A6600BFEB39 /* BaseViewController.swift */; };
+		CD831F16251F3C2C00BFEB39 /* PopUpAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD831F15251F3C2C00BFEB39 /* PopUpAnimation.swift */; };
+		CD831F1B251F3D5C00BFEB39 /* PopupViewer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD831F1A251F3D5C00BFEB39 /* PopupViewer.swift */; };
+		CD831F20251F3E0D00BFEB39 /* AppStoryboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD831F1F251F3E0D00BFEB39 /* AppStoryboard.swift */; };
+		CD831F23251F3E3200BFEB39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD831F22251F3E3200BFEB39 /* ViewController.swift */; };
+		CD831F2E251F4C7500BFEB39 /* SchoolOfThought.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD831F2D251F4C7500BFEB39 /* SchoolOfThought.swift */; };
+		CD831F74251F576900BFEB39 /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD831F73251F576900BFEB39 /* AppTheme.swift */; };
+		CD831FA3251F58B800BFEB39 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD831FA2251F58B800BFEB39 /* UserData.swift */; };
+		CD9F55BD256537E300961805 /* WidgetUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD9F55BC256537E300961805 /* WidgetUtils.swift */; };
+		CDB57CA12521BD4500BFC7E9 /* iSalahEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB57CA02521BD4100BFC7E9 /* iSalahEntry.swift */; };
+		CDB57CAA2521BEB700BFC7E9 /* iSalahTimelineProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDB57CA72521BE5800BFC7E9 /* iSalahTimelineProvider.swift */; };
+		CDD007B92521742D003036B1 /* WidgetLocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD007AF25216F3F003036B1 /* WidgetLocationService.swift */; };
+		CDD07401251F88DA00AF9BF8 /* AladhanService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD07400251F88DA00AF9BF8 /* AladhanService.swift */; };
+		CDD07405251F8A1D00AF9BF8 /* PrayerTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD07404251F8A1D00AF9BF8 /* PrayerTime.swift */; };
+		CDD07412251F906C00AF9BF8 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD07411251F906C00AF9BF8 /* View.swift */; };
+		CDD07442251F99E600AF9BF8 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD07441251F99E600AF9BF8 /* Strings.swift */; };
+		CDD07446251FA05E00AF9BF8 /* PrayerTimeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD07445251FA05E00AF9BF8 /* PrayerTimeTableViewCell.swift */; };
+		CDD07449251FA34900AF9BF8 /* HomeViewController+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD07448251FA34900AF9BF8 /* HomeViewController+TableView.swift */; };
+		CDD07453251FABAE00AF9BF8 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD07452251FABAE00AF9BF8 /* LocationService.swift */; };
+		CDF2384325209E85003CCDFC /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD4A6F52251DD29300A2513A /* Colors.xcassets */; };
+		CDF2386F2520A60B003CCDFC /* PrayerTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD07404251F8A1D00AF9BF8 /* PrayerTime.swift */; };
+		CDF238792520A89B003CCDFC /* PrayerTimeVerticalRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF238692520A5F4003CCDFC /* PrayerTimeVerticalRow.swift */; };
+		CDF238862520A906003CCDFC /* PrayerTimeVerticalRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDF238692520A5F4003CCDFC /* PrayerTimeVerticalRow.swift */; };
+		CDF238B72520BA9E003CCDFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD5899C125204C1500764AEA /* Assets.xcassets */; };
+		CDF238C32520BC7C003CCDFC /* AppTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD831F73251F576900BFEB39 /* AppTheme.swift */; };
+		CDF238CB2520BDAB003CCDFC /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDD07441251F99E600AF9BF8 /* Strings.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD5899C425204C1500764AEA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD4A6F2E251DCF7600A2513A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CD5899B825204C1500764AEA;
+			remoteInfo = iSalahWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CD5899C625204C1500764AEA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CD5899C725204C1500764AEA /* iSalahWidgetExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0D8BACB9258A7ED8008067A2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		3C62FAD0EB06276FF40DCAA6 /* Pods-iSalah.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSalah.debug.xcconfig"; path = "Target Support Files/Pods-iSalah/Pods-iSalah.debug.xcconfig"; sourceTree = "<group>"; };
+		5921D6AFED90FA3BAA61421C /* Pods_iSalah.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iSalah.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		866CC0033A55EB7E6E875F80 /* Pods-iSalahWidgetExtension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSalahWidgetExtension.debug.xcconfig"; path = "Target Support Files/Pods-iSalahWidgetExtension/Pods-iSalahWidgetExtension.debug.xcconfig"; sourceTree = "<group>"; };
+		C2C40FF615A108B6B9E3AAA2 /* Pods-iSalah.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSalah.release.xcconfig"; path = "Target Support Files/Pods-iSalah/Pods-iSalah.release.xcconfig"; sourceTree = "<group>"; };
+		CA747452ED3DC9A631FF4530 /* Pods-iSalahWidgetExtension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iSalahWidgetExtension.release.xcconfig"; path = "Target Support Files/Pods-iSalahWidgetExtension/Pods-iSalahWidgetExtension.release.xcconfig"; sourceTree = "<group>"; };
+		CD44507D2564987200C2D388 /* iSalahWidgetViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSalahWidgetViews.swift; sourceTree = "<group>"; };
+		CD4A6F36251DCF7600A2513A /* iSalah.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iSalah.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD4A6F39251DCF7600A2513A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CD4A6F3B251DCF7600A2513A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CD4A6F40251DCF7600A2513A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CD4A6F42251DCF7700A2513A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD4A6F45251DCF7700A2513A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CD4A6F47251DCF7700A2513A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD4A6F52251DD29300A2513A /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		CD4F76A32563EEAA003E4F7D /* AppUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtils.swift; sourceTree = "<group>"; };
+		CD5899B22520427E00764AEA /* PrayerTimeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimeViewModel.swift; sourceTree = "<group>"; };
+		CD5899B925204C1500764AEA /* iSalahWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = iSalahWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD5899BA25204C1500764AEA /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		CD5899BC25204C1500764AEA /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		CD5899BF25204C1500764AEA /* iSalahWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSalahWidget.swift; sourceTree = "<group>"; };
+		CD5899C125204C1500764AEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CD5899C325204C1500764AEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CD59B90E251DE9A200879046 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		CD6984332520EA7C001BFAD8 /* PrayerTimeHorizontalRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimeHorizontalRow.swift; sourceTree = "<group>"; };
+		CD69844E2520F6D3001BFAD8 /* iSalah.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iSalah.entitlements; sourceTree = "<group>"; };
+		CD69844F2520F762001BFAD8 /* iSalahWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = iSalahWidgetExtension.entitlements; sourceTree = "<group>"; };
+		CD7BC1902566024A00DBF97D /* OpenSans-Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Semibold.ttf"; sourceTree = "<group>"; };
+		CD831EC9251EFD7900BFEB39 /* TrendexSSi-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TrendexSSi-Regular.ttf"; sourceTree = "<group>"; };
+		CD831ED7251EFDE600BFEB39 /* TrendexSSi-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TrendexSSi-Bold.ttf"; sourceTree = "<group>"; };
+		CD831F06251F10F400BFEB39 /* Popup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Popup.storyboard; sourceTree = "<group>"; };
+		CD831F0B251F3A4800BFEB39 /* SchoolOfThoughtSelectPopupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolOfThoughtSelectPopupController.swift; sourceTree = "<group>"; };
+		CD831F10251F3A6600BFEB39 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		CD831F15251F3C2C00BFEB39 /* PopUpAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopUpAnimation.swift; sourceTree = "<group>"; };
+		CD831F1A251F3D5C00BFEB39 /* PopupViewer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewer.swift; sourceTree = "<group>"; };
+		CD831F1F251F3E0D00BFEB39 /* AppStoryboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoryboard.swift; sourceTree = "<group>"; };
+		CD831F22251F3E3200BFEB39 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CD831F2D251F4C7500BFEB39 /* SchoolOfThought.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolOfThought.swift; sourceTree = "<group>"; };
+		CD831F73251F576900BFEB39 /* AppTheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTheme.swift; sourceTree = "<group>"; };
+		CD831FA2251F58B800BFEB39 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		CD9F55BC256537E300961805 /* WidgetUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetUtils.swift; sourceTree = "<group>"; };
+		CDB57CA02521BD4100BFC7E9 /* iSalahEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSalahEntry.swift; sourceTree = "<group>"; };
+		CDB57CA72521BE5800BFC7E9 /* iSalahTimelineProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iSalahTimelineProvider.swift; sourceTree = "<group>"; };
+		CDD007AF25216F3F003036B1 /* WidgetLocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetLocationService.swift; sourceTree = "<group>"; };
+		CDD07400251F88DA00AF9BF8 /* AladhanService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AladhanService.swift; sourceTree = "<group>"; };
+		CDD07404251F8A1D00AF9BF8 /* PrayerTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTime.swift; sourceTree = "<group>"; };
+		CDD07411251F906C00AF9BF8 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		CDD07441251F99E600AF9BF8 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		CDD07445251FA05E00AF9BF8 /* PrayerTimeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimeTableViewCell.swift; sourceTree = "<group>"; };
+		CDD07448251FA34900AF9BF8 /* HomeViewController+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeViewController+TableView.swift"; sourceTree = "<group>"; };
+		CDD07452251FABAE00AF9BF8 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		CDF238692520A5F4003CCDFC /* PrayerTimeVerticalRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrayerTimeVerticalRow.swift; sourceTree = "<group>"; };
+		EDDFAF6551C111C1191723C2 /* Pods_iSalahWidgetExtension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iSalahWidgetExtension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CD4A6F33251DCF7600A2513A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C2D36C64D110808FD7F9B13 /* Pods_iSalah.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD5899B625204C1500764AEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD5899BD25204C1500764AEA /* SwiftUI.framework in Frameworks */,
+				CD5899BB25204C1500764AEA /* WidgetKit.framework in Frameworks */,
+				AE6FA3F808D0446273BE64E6 /* Pods_iSalahWidgetExtension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6D9229439BE7B9CD2144CBFC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3C62FAD0EB06276FF40DCAA6 /* Pods-iSalah.debug.xcconfig */,
+				C2C40FF615A108B6B9E3AAA2 /* Pods-iSalah.release.xcconfig */,
+				866CC0033A55EB7E6E875F80 /* Pods-iSalahWidgetExtension.debug.xcconfig */,
+				CA747452ED3DC9A631FF4530 /* Pods-iSalahWidgetExtension.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		8675DCB51B917B812809BBFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CD5899BA25204C1500764AEA /* WidgetKit.framework */,
+				CD5899BC25204C1500764AEA /* SwiftUI.framework */,
+				5921D6AFED90FA3BAA61421C /* Pods_iSalah.framework */,
+				EDDFAF6551C111C1191723C2 /* Pods_iSalahWidgetExtension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CD4A6F2D251DCF7600A2513A = {
+			isa = PBXGroup;
+			children = (
+				CD69844F2520F762001BFAD8 /* iSalahWidgetExtension.entitlements */,
+				CD4A6F38251DCF7600A2513A /* iSalah */,
+				CD5899BE25204C1500764AEA /* iSalahWidget */,
+				6D9229439BE7B9CD2144CBFC /* Pods */,
+				8675DCB51B917B812809BBFE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CD4A6F37251DCF7600A2513A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD4A6F36251DCF7600A2513A /* iSalah.app */,
+				CD5899B925204C1500764AEA /* iSalahWidgetExtension.appex */,
+			);
+			name = Products;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		CD4A6F38251DCF7600A2513A /* iSalah */ = {
+			isa = PBXGroup;
+			children = (
+				CD69844E2520F6D3001BFAD8 /* iSalah.entitlements */,
+				CD4A6F4F251DD22200A2513A /* App */,
+				CD59B906251DE95700879046 /* Controllers */,
+				CD5899B12520426200764AEA /* ViewModels */,
+				CD4A6F50251DD23000A2513A /* Views */,
+				CDD07403251F89F800AF9BF8 /* Models */,
+				CDD073FE251F884600AF9BF8 /* Services */,
+				CD831F13251F3C0300BFEB39 /* Utils */,
+				CD4A6F4E251DD21000A2513A /* Resources */,
+				CD4A6F47251DCF7700A2513A /* Info.plist */,
+				0D8BACB9258A7ED8008067A2 /* GoogleService-Info.plist */,
+			);
+			path = iSalah;
+			sourceTree = "<group>";
+		};
+		CD4A6F4E251DD21000A2513A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				CD5F889E251DDF7F003341C3 /* Fonts */,
+				CD4A6F42251DCF7700A2513A /* Assets.xcassets */,
+				CD4A6F52251DD29300A2513A /* Colors.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		CD4A6F4F251DD22200A2513A /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CD4A6F39251DCF7600A2513A /* AppDelegate.swift */,
+				CD4A6F3B251DCF7600A2513A /* SceneDelegate.swift */,
+				CD831F73251F576900BFEB39 /* AppTheme.swift */,
+				CDD07441251F99E600AF9BF8 /* Strings.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		CD4A6F50251DD23000A2513A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CDF238852520A8E6003CCDFC /* WidgetViews */,
+				CD4A6F51251DD23B00A2513A /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CD4A6F51251DD23B00A2513A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				CD4A6F3F251DCF7600A2513A /* Main.storyboard */,
+				CD4A6F44251DCF7700A2513A /* LaunchScreen.storyboard */,
+				CD831F06251F10F400BFEB39 /* Popup.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		CD5899B12520426200764AEA /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				CD5899B22520427E00764AEA /* PrayerTimeViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		CD5899BE25204C1500764AEA /* iSalahWidget */ = {
+			isa = PBXGroup;
+			children = (
+				CD9F55BB256537D100961805 /* Utils */,
+				CDB57CA62521BE2300BFC7E9 /* Services */,
+				CD5899BF25204C1500764AEA /* iSalahWidget.swift */,
+				CD44507D2564987200C2D388 /* iSalahWidgetViews.swift */,
+				CDB57CA02521BD4100BFC7E9 /* iSalahEntry.swift */,
+				CDB57CA72521BE5800BFC7E9 /* iSalahTimelineProvider.swift */,
+				CD4A6F37251DCF7600A2513A /* Products */,
+				CD5899C125204C1500764AEA /* Assets.xcassets */,
+				CD5899C325204C1500764AEA /* Info.plist */,
+			);
+			path = iSalahWidget;
+			sourceTree = "<group>";
+		};
+		CD59B906251DE95700879046 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				CD831F0F251F3A5800BFEB39 /* Common */,
+				CD831F0A251F3A0900BFEB39 /* Popup */,
+				CD59B908251DE96A00879046 /* Home */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		CD59B908251DE96A00879046 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				CDD07444251FA04500AF9BF8 /* Cell */,
+				CD59B90E251DE9A200879046 /* HomeViewController.swift */,
+				CDD07448251FA34900AF9BF8 /* HomeViewController+TableView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		CD5F889E251DDF7F003341C3 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				CD831EC9251EFD7900BFEB39 /* TrendexSSi-Regular.ttf */,
+				CD831ED7251EFDE600BFEB39 /* TrendexSSi-Bold.ttf */,
+				CD7BC1902566024A00DBF97D /* OpenSans-Semibold.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		CD831F0A251F3A0900BFEB39 /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				CD831F0B251F3A4800BFEB39 /* SchoolOfThoughtSelectPopupController.swift */,
+			);
+			path = Popup;
+			sourceTree = "<group>";
+		};
+		CD831F0F251F3A5800BFEB39 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				CD831F10251F3A6600BFEB39 /* BaseViewController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		CD831F13251F3C0300BFEB39 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CD831F1E251F3DFA00BFEB39 /* Enums */,
+				CD831F1D251F3DEF00BFEB39 /* Extensions */,
+				CD831F14251F3C1300BFEB39 /* Animations */,
+				CD831F1A251F3D5C00BFEB39 /* PopupViewer.swift */,
+				CD831FA2251F58B800BFEB39 /* UserData.swift */,
+				CD4F76A32563EEAA003E4F7D /* AppUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CD831F14251F3C1300BFEB39 /* Animations */ = {
+			isa = PBXGroup;
+			children = (
+				CD831F15251F3C2C00BFEB39 /* PopUpAnimation.swift */,
+			);
+			path = Animations;
+			sourceTree = "<group>";
+		};
+		CD831F1D251F3DEF00BFEB39 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CD831F22251F3E3200BFEB39 /* ViewController.swift */,
+				CDD07411251F906C00AF9BF8 /* View.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		CD831F1E251F3DFA00BFEB39 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				CD831F1F251F3E0D00BFEB39 /* AppStoryboard.swift */,
+				CD831F2D251F4C7500BFEB39 /* SchoolOfThought.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		CD9F55BB256537D100961805 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				CD9F55BC256537E300961805 /* WidgetUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		CDB57CA62521BE2300BFC7E9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CDD007AF25216F3F003036B1 /* WidgetLocationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CDD073FE251F884600AF9BF8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CDD07451251FAB9700AF9BF8 /* Location */,
+				CDD073FF251F885100AF9BF8 /* API */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CDD073FF251F885100AF9BF8 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				CDD07400251F88DA00AF9BF8 /* AladhanService.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		CDD07403251F89F800AF9BF8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CDD07404251F8A1D00AF9BF8 /* PrayerTime.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		CDD07444251FA04500AF9BF8 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				CDD07445251FA05E00AF9BF8 /* PrayerTimeTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		CDD07451251FAB9700AF9BF8 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				CDD07452251FABAE00AF9BF8 /* LocationService.swift */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		CDF238852520A8E6003CCDFC /* WidgetViews */ = {
+			isa = PBXGroup;
+			children = (
+				CDF238692520A5F4003CCDFC /* PrayerTimeVerticalRow.swift */,
+				CD6984332520EA7C001BFAD8 /* PrayerTimeHorizontalRow.swift */,
+			);
+			path = WidgetViews;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CD4A6F35251DCF7600A2513A /* iSalah */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD4A6F4A251DCF7700A2513A /* Build configuration list for PBXNativeTarget "iSalah" */;
+			buildPhases = (
+				CA67DD29CA402241627CFC74 /* [CP] Check Pods Manifest.lock */,
+				CD4A6F32251DCF7600A2513A /* Sources */,
+				CD4A6F33251DCF7600A2513A /* Frameworks */,
+				CD4A6F34251DCF7600A2513A /* Resources */,
+				CD5899C625204C1500764AEA /* Embed App Extensions */,
+				C1BB543DE0919336A3ACE474 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD5899C525204C1500764AEA /* PBXTargetDependency */,
+			);
+			name = iSalah;
+			productName = iSalah;
+			productReference = CD4A6F36251DCF7600A2513A /* iSalah.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CD5899B825204C1500764AEA /* iSalahWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CD5899C825204C1500764AEA /* Build configuration list for PBXNativeTarget "iSalahWidgetExtension" */;
+			buildPhases = (
+				554D259AFCB664A54E454C9F /* [CP] Check Pods Manifest.lock */,
+				CD5899B525204C1500764AEA /* Sources */,
+				CD5899B625204C1500764AEA /* Frameworks */,
+				CD5899B725204C1500764AEA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iSalahWidgetExtension;
+			productName = iSalahWidgetExtension;
+			productReference = CD5899B925204C1500764AEA /* iSalahWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CD4A6F2E251DCF7600A2513A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1200;
+				LastUpgradeCheck = 1200;
+				ORGANIZATIONNAME = Intelcy;
+				TargetAttributes = {
+					CD4A6F35251DCF7600A2513A = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					CD5899B825204C1500764AEA = {
+						CreatedOnToolsVersion = 12.0;
+					};
+				};
+			};
+			buildConfigurationList = CD4A6F31251DCF7600A2513A /* Build configuration list for PBXProject "iSalah" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CD4A6F2D251DCF7600A2513A;
+			productRefGroup = CD4A6F37251DCF7600A2513A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CD4A6F35251DCF7600A2513A /* iSalah */,
+				CD5899B825204C1500764AEA /* iSalahWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CD4A6F34251DCF7600A2513A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD831F07251F10F400BFEB39 /* Popup.storyboard in Resources */,
+				CD4A6F46251DCF7700A2513A /* LaunchScreen.storyboard in Resources */,
+				CD4A6F53251DD29300A2513A /* Colors.xcassets in Resources */,
+				CD7BC1912566024A00DBF97D /* OpenSans-Semibold.ttf in Resources */,
+				CD4A6F43251DCF7700A2513A /* Assets.xcassets in Resources */,
+				CD4A6F41251DCF7600A2513A /* Main.storyboard in Resources */,
+				CD831ED8251EFDE600BFEB39 /* TrendexSSi-Bold.ttf in Resources */,
+				0D8BACBA258A7ED9008067A2 /* GoogleService-Info.plist in Resources */,
+				CDF238B72520BA9E003CCDFC /* Assets.xcassets in Resources */,
+				CD831ECA251EFD7900BFEB39 /* TrendexSSi-Regular.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD5899B725204C1500764AEA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD7BC1922566024A00DBF97D /* OpenSans-Semibold.ttf in Resources */,
+				CD5899C225204C1500764AEA /* Assets.xcassets in Resources */,
+				CDF2384325209E85003CCDFC /* Colors.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		554D259AFCB664A54E454C9F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iSalahWidgetExtension-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C1BB543DE0919336A3ACE474 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iSalah/Pods-iSalah-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iSalah/Pods-iSalah-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iSalah/Pods-iSalah-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA67DD29CA402241627CFC74 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iSalah-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CD4A6F32251DCF7600A2513A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD831F20251F3E0D00BFEB39 /* AppStoryboard.swift in Sources */,
+				CD831F11251F3A6600BFEB39 /* BaseViewController.swift in Sources */,
+				CD5899B32520427E00764AEA /* PrayerTimeViewModel.swift in Sources */,
+				CD4F76A42563EEAA003E4F7D /* AppUtils.swift in Sources */,
+				CDD07442251F99E600AF9BF8 /* Strings.swift in Sources */,
+				CDD07446251FA05E00AF9BF8 /* PrayerTimeTableViewCell.swift in Sources */,
+				CDD07412251F906C00AF9BF8 /* View.swift in Sources */,
+				CD831F2E251F4C7500BFEB39 /* SchoolOfThought.swift in Sources */,
+				CDD07453251FABAE00AF9BF8 /* LocationService.swift in Sources */,
+				CD831F16251F3C2C00BFEB39 /* PopUpAnimation.swift in Sources */,
+				CD831F23251F3E3200BFEB39 /* ViewController.swift in Sources */,
+				CDD07401251F88DA00AF9BF8 /* AladhanService.swift in Sources */,
+				CDF238792520A89B003CCDFC /* PrayerTimeVerticalRow.swift in Sources */,
+				CD4A6F3A251DCF7600A2513A /* AppDelegate.swift in Sources */,
+				CD831FA3251F58B800BFEB39 /* UserData.swift in Sources */,
+				CD6984342520EA7C001BFAD8 /* PrayerTimeHorizontalRow.swift in Sources */,
+				CD831F1B251F3D5C00BFEB39 /* PopupViewer.swift in Sources */,
+				CDD07405251F8A1D00AF9BF8 /* PrayerTime.swift in Sources */,
+				CD831F0C251F3A4800BFEB39 /* SchoolOfThoughtSelectPopupController.swift in Sources */,
+				CD831F74251F576900BFEB39 /* AppTheme.swift in Sources */,
+				CDD07449251FA34900AF9BF8 /* HomeViewController+TableView.swift in Sources */,
+				CD4A6F3C251DCF7600A2513A /* SceneDelegate.swift in Sources */,
+				CD59B90F251DE9A200879046 /* HomeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CD5899B525204C1500764AEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD4F76A52563EEAA003E4F7D /* AppUtils.swift in Sources */,
+				CD69844B2520F40B001BFAD8 /* SchoolOfThought.swift in Sources */,
+				CD44507E2564987200C2D388 /* iSalahWidgetViews.swift in Sources */,
+				CD5899C025204C1500764AEA /* iSalahWidget.swift in Sources */,
+				CDD007B92521742D003036B1 /* WidgetLocationService.swift in Sources */,
+				CDB57CAA2521BEB700BFC7E9 /* iSalahTimelineProvider.swift in Sources */,
+				CDB57CA12521BD4500BFC7E9 /* iSalahEntry.swift in Sources */,
+				CDF238C32520BC7C003CCDFC /* AppTheme.swift in Sources */,
+				CD6984482520F3F4001BFAD8 /* UserData.swift in Sources */,
+				CDF238CB2520BDAB003CCDFC /* Strings.swift in Sources */,
+				CDF2386F2520A60B003CCDFC /* PrayerTime.swift in Sources */,
+				CD6984CD2521188F001BFAD8 /* AladhanService.swift in Sources */,
+				CD9F55BD256537E300961805 /* WidgetUtils.swift in Sources */,
+				CD6984372520EAC7001BFAD8 /* PrayerTimeHorizontalRow.swift in Sources */,
+				CDF238862520A906003CCDFC /* PrayerTimeVerticalRow.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD5899C525204C1500764AEA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CD5899B825204C1500764AEA /* iSalahWidgetExtension */;
+			targetProxy = CD5899C425204C1500764AEA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CD4A6F3F251DCF7600A2513A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD4A6F40251DCF7600A2513A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CD4A6F44251DCF7700A2513A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CD4A6F45251DCF7700A2513A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CD4A6F48251DCF7700A2513A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CD4A6F49251DCF7700A2513A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CD4A6F4B251DCF7700A2513A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3C62FAD0EB06276FF40DCAA6 /* Pods-iSalah.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = iSalah/iSalah.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = R8ZSBYN85Y;
+				INFOPLIST_FILE = iSalah/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ShafayDanyal.iSalah;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Prayer Times Distribution Profile";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		CD4A6F4C251DCF7700A2513A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2C40FF615A108B6B9E3AAA2 /* Pods-iSalah.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = iSalah/iSalah.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = R8ZSBYN85Y;
+				INFOPLIST_FILE = iSalah/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 2.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ShafayDanyal.iSalah;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "Prayer Times Distribution Profile";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		CD5899C925204C1500764AEA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 866CC0033A55EB7E6E875F80 /* Pods-iSalahWidgetExtension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = iSalahWidgetExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = R8ZSBYN85Y;
+				INFOPLIST_FILE = iSalahWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 2.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ShafayDanyal.iSalah.iSalahWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "iSalahWidget Distribution Profile";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CD5899CA25204C1500764AEA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CA747452ED3DC9A631FF4530 /* Pods-iSalahWidgetExtension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = iSalahWidgetExtension.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = R8ZSBYN85Y;
+				INFOPLIST_FILE = iSalahWidget/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 2.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ShafayDanyal.iSalah.iSalahWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "iSalahWidget Distribution Profile";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CD4A6F31251DCF7600A2513A /* Build configuration list for PBXProject "iSalah" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD4A6F48251DCF7700A2513A /* Debug */,
+				CD4A6F49251DCF7700A2513A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD4A6F4A251DCF7700A2513A /* Build configuration list for PBXNativeTarget "iSalah" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD4A6F4B251DCF7700A2513A /* Debug */,
+				CD4A6F4C251DCF7700A2513A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CD5899C825204C1500764AEA /* Build configuration list for PBXNativeTarget "iSalahWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CD5899C925204C1500764AEA /* Debug */,
+				CD5899CA25204C1500764AEA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CD4A6F2E251DCF7600A2513A /* Project object */;
+}

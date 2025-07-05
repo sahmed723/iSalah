@@ -1,0 +1,6 @@
+framework module Pods_iSalahWidgetExtension {
+  umbrella header "Pods-iSalahWidgetExtension-umbrella.h"
+
+  export *
+  module * { export * }
+}
